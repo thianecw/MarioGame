@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mario Game</title>
-  </head>
 
-  <body>
-    <div class="div-logo">
-      <img class="logo" src="./assets/logo.png" />
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <title>Mario Game</title>
+</head>
 
-    <div class="button">
-      <button class="restart">RESTART</button>
-    </div>
+<body>
+  <audio id="jumpSound" src="assets/jump.mp3"></audio>
+  <audio id="gameOverSound" src="assets/gameover.mp3"></audio>
+  <div class="div-logo">
+    <img class="logo" src="./assets/logo.png" />
+  </div>
 
-    <div class="board">
-        <p class="score">Score: <span class="your-score"><span>0</span></p>
-        <h1> </h1>
-      <img src="./assets/clouds.png" alt="clouds" class="clouds" />
-      <img src="./assets/mario-gif.gif" alt="gif do mario" class="mario" />
-      <img src="./assets/pipe.png" alt="pipe" class="pipe" />
-    </div>
-  </body>
-  <script src="script.js"></script>
+  <div class="button">
+    <button class="start">START</button>
+    <button class="restart">RESTART</button>
+  </div>
+
+  <div class="board">
+    <p class="score">Score: <span class="your-score"><span>0</span></p>
+    <h1> </h1>
+    <img src="./assets/clouds.png" alt="clouds" class="clouds" />
+    <img src="./assets/mario-gif.gif" alt="gif do mario" class="mario" />
+    <img src="./assets/pipe.png" alt="pipe" class="pipe" />
+  </div>
+</body>
+<script src="script.js"></script>
+
 </html>

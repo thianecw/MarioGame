@@ -17,6 +17,7 @@ body {
 .logo {
 width: 230px;
 height: 110px;
+margin: 50px;
 }
 
 .board {
@@ -52,8 +53,8 @@ margin-top: 250px;
   padding: 10px 0;
 }
 
-.restart {
-  width: 20%;
+.start, .restart {
+  width: 200px;
   padding: 12px 0;
   cursor: pointer;
   border: none;
@@ -62,15 +63,24 @@ margin-top: 250px;
   border-radius: 30px;
   color: white;
   transition: 800ms;
+  margin-left: 20px;
 }
 
-.restart:active {
-    background-color: yellow;
-    }
+.start:hover {
+  opacity: 0.8;
+  }
+
 .restart:hover {
 opacity: 0.8;
 }
 
+.start:active {
+  opacity: 0.5;
+  }
+
+.restart:active {
+opacity: 0.5;
+}
 
 .clouds {
   position: absolute;
@@ -93,7 +103,7 @@ opacity: 0.8;
   position: absolute;
   bottom: 0;
   width: 80px;
-  animation: pipe 1.5s infinite linear;
+  animation: pipe 1.6s infinite linear;
 }
 
 /* ANIMATION */
@@ -147,13 +157,8 @@ width: 95%;
 height: 450px;
 }
 
-board {
-width: 95%;
-height: 450px;
-margin: 10px auto;
-}
 
-.restart {
+.start, .restart {
     width: 40%;
     padding: 8px 0;
     font-size: 14px;
